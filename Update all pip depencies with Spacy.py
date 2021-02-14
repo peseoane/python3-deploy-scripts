@@ -4,7 +4,6 @@
 
 import pkg_resources
 from subprocess import call
-from re import search
 
 packages = [dist.project_name for dist in pkg_resources.working_set]
 call("pip install -U pip wheel setuptools --upgrade ", shell=True)
